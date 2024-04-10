@@ -1,0 +1,195 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:program_name",
+ "creation": "2015-09-07 12:54:03.609282",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "program_name",
+  "hero_image",
+  "role",
+  "column_break_3",
+  "program_abbreviation",
+  "head_of_department",
+  "section_break_courses",
+  "employee_details",
+  "connections_tab"
+ ],
+ "fields": [
+  {
+   "fieldname": "program_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Program Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "program_abbreviation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Program Abbreviation"
+  },
+  {
+   "fieldname": "section_break_courses",
+   "fieldtype": "Section Break",
+   "label": "Employee Id"
+  },
+  {
+   "fieldname": "connections_tab",
+   "fieldtype": "Tab Break",
+   "label": "Connections",
+   "show_dashboard": 1
+  },
+  {
+   "fieldname": "hero_image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image"
+  },
+  {
+   "fieldname": "employee_details",
+   "fieldtype": "Table",
+   "label": "Employee Details",
+   "options": "Program_Employee_Name"
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Link",
+   "label": "Role",
+   "options": "Role"
+  },
+  {
+   "fieldname": "head_of_department",
+   "fieldtype": "Link",
+   "label": "Head of Department",
+   "options": "Employee"
+  }
+ ],
+ "image_field": "hero_image",
+ "links": [
+  {
+   "group": "Admission and Enrollments",
+   "link_doctype": "Student Applicant",
+   "link_fieldname": "program"
+  },
+  {
+   "group": "Admission and Enrollments",
+   "link_doctype": "Program Enrollment",
+   "link_fieldname": "program"
+  },
+  {
+   "group": "Student Activity",
+   "link_doctype": "Student Group",
+   "link_fieldname": "program"
+  },
+  {
+   "group": "Student Activity",
+   "link_doctype": "Student Log",
+   "link_fieldname": "program"
+  },
+  {
+   "group": "Assessment",
+   "link_doctype": "Assessment Plan",
+   "link_fieldname": "program"
+  },
+  {
+   "group": "Fee",
+   "link_doctype": "Fee Structure",
+   "link_fieldname": "program"
+  },
+  {
+   "group": "Fee",
+   "link_doctype": "Fee Schedule",
+   "link_fieldname": "program"
+  },
+  {
+   "group": "Assessment",
+   "link_doctype": "Assessment Result",
+   "link_fieldname": "program"
+  }
+ ],
+ "modified": "2024-04-02 09:48:20.867072",
+ "modified_by": "Administrator",
+ "module": "Education",
+ "name": "Program",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Academics User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Instructor",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Student",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Principal of Institute",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
