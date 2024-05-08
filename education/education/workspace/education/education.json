@@ -686,7 +686,7 @@
    "type": "Link"
   }
  ],
- "modified": "2024-04-12 21:03:58.888138",
+ "modified": "2024-04-25 11:32:13.056397",
  "modified_by": "Administrator",
  "module": "Education",
  "name": "Education",
@@ -697,7 +697,7 @@
  "quick_lists": [],
  "restrict_to_domain": "",
  "roles": [],
- "sequence_id": 23.0,
+ "sequence_id": 30.0,
  "shortcuts": [
   {
    "color": "Grey",

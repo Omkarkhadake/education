@@ -7,23 +7,26 @@
  "document_type": "Other",
  "engine": "InnoDB",
  "field_order": [
-  "instructor_name",
   "employee",
+  "instructor_name",
   "gender",
   "column_break_5",
   "status",
   "naming_series",
   "department",
+  "program",
   "image",
   "log_details",
   "instructor_log"
  ],
  "fields": [
   {
+   "fetch_from": "employee.employee_name",
    "fieldname": "instructor_name",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_global_search": 1,
    "label": "Instructor Name",
+   "options": "Employee",
    "reqd": 1
   },
   {
@@ -86,11 +89,18 @@
    "label": "Gender",
    "options": "Gender",
    "read_only_depends_on": "employee"
+  },
+  {
+   "fetch_from": "employee.select_program",
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "label": "Program",
+   "options": "Program"
   }
  ],
  "image_field": "image",
  "links": [],
- "modified": "2023-12-19 10:03:45.696155",
+ "modified": "2024-05-05 10:40:17.512115",
  "modified_by": "Administrator",
  "module": "Education",
  "name": "Instructor",
