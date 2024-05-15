@@ -14,6 +14,7 @@
   "program_abbreviation",
   "head_of_department",
   "institute",
+  "portfolio_manager",
   "section_break_courses",
   "employee_details",
   "connections_tab"
@@ -78,6 +79,12 @@
    "fieldtype": "Link",
    "label": "Institute",
    "options": "Institute"
+  },
+  {
+   "fieldname": "portfolio_manager",
+   "fieldtype": "Link",
+   "label": "Portfolio Manager",
+   "options": "Employee"
   }
  ],
  "image_field": "hero_image",
@@ -123,7 +130,7 @@
    "link_fieldname": "program"
   }
  ],
- "modified": "2024-05-08 15:01:02.770388",
+ "modified": "2024-05-14 23:32:42.604794",
  "modified_by": "Administrator",
  "module": "Education",
  "name": "Program",
@@ -243,7 +250,6 @@
   },
   {
    "create": 1,
-   "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
@@ -254,13 +260,16 @@
    "write": 1
   },
   {
+   "create": 1,
+   "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
    "role": "Faculty",
-   "share": 1
+   "share": 1,
+   "write": 1
   },
   {
    "email": 1,
